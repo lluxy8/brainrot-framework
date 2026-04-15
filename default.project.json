@@ -1,0 +1,23 @@
+{
+  "name": "brainrot-framework",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "BrainrotFramework": {
+        "$path": "src/Shared"
+      }
+    },
+    "ServerScriptService": {
+      "BrainrotFrameworkServer": {
+        "$path": "src/Server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "BrainrotFrameworkClient": {
+          "$path": "src/Client"
+        }
+      }
+    }
+  }
+}

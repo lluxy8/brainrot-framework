@@ -1,0 +1,24 @@
+# Aftman
+.aftman/
+
+# Wally
+Packages/
+wally.lock
+
+# Rojo build outputs
+*.rbxl
+*.rbxlx
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Test output
+coverage/
