@@ -11,23 +11,35 @@ $ErrorActionPreference = "Stop"
 # Lints Luau/Lua files using Selene.
 # Prefers a global `selene`; falls back to `aftman run selene`.
 
-$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\\..")
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 Push-Location $repoRoot
 try {
-  $seleneCmd = Get-Command selene -ErrorAction SilentlyContinue
-  $aftmanCmd = Get-Command aftman -ErrorAction SilentlyContinue
+  $previousLocalAppData = $env:LOCALAPPDATA
+  $repoLocalAppData = Join-Path $repoRoot ".cache\localappdata"
+  if (-not (Test-Path $repoLocalAppData)) {
+    New-Item -Path $repoLocalAppData -ItemType Directory | Out-Null
+  }
+  $env:LOCALAPPDATA = $repoLocalAppData
 
-  $exe = $null
-  $prefixArgs = @()
+  function Resolve-Tool([string]$ToolName) {
+    $cmd = Get-Command $ToolName -ErrorAction SilentlyContinue
+    if ($cmd) {
+      return $cmd.Source
+    }
+
+    $candidate = Join-Path $env:USERPROFILE ".aftman\bin\$ToolName.exe"
+    if (Test-Path $candidate) {
+      return $candidate
+    }
+
+    return $null
+  }
+
+  $exe = Resolve-Tool "selene"
   $seleneArgs = @("--display-style", "Rich")
 
-  if ($seleneCmd) {
-    $exe = $seleneCmd.Source
-  } elseif ($aftmanCmd) {
-    $exe = $aftmanCmd.Source
-    $prefixArgs = @("run", "selene")
-  } else {
-    throw "Selene not found. Install Selene (recommended via Aftman) and ensure it's on PATH."
+  if (-not $exe) {
+    throw "Selene not found. Run './scripts/install.ps1' first."
   }
 
   function Get-LintFiles {
@@ -52,7 +64,7 @@ try {
 
     Write-Host ("`n[Selene] Linting {0} file(s)..." -f $files.Count) -ForegroundColor Cyan
     try {
-      & $exe @prefixArgs @seleneArgs @files
+      & $exe @seleneArgs @files
       $script:lastExitCode = $LASTEXITCODE
       if ($LASTEXITCODE -ne 0) {
         Write-Host ("[Selene] Failed (exit {0})" -f $LASTEXITCODE) -ForegroundColor Red
@@ -115,5 +127,10 @@ try {
     }
   }
 } finally {
+  if ($null -ne $previousLocalAppData -and $previousLocalAppData -ne "") {
+    $env:LOCALAPPDATA = $previousLocalAppData
+  } else {
+    Remove-Item Env:LOCALAPPDATA -ErrorAction SilentlyContinue
+  }
   Pop-Location
 }
