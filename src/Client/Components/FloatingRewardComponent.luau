@@ -5,6 +5,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Shared = ReplicatedStorage:WaitForChild("BrainrotFramework") :: any
 local Currency = require(Shared.Constants.Currency)
+local AssetConfig = require(Shared.Config.AssetConfig)
 
 local FloatingRewardComponent = {}
 FloatingRewardComponent.__index = FloatingRewardComponent
@@ -41,7 +42,7 @@ function FloatingRewardComponent:Start()
 		self._player:SetAttribute("Brainrot_FloatingReward_TaskId", payload.taskId or "")
 
 		if payload.rewardAmount and payload.rewardAmount > 0 then
-			self._audioService:Play2D("rbxassetid://9118828560", 0.35, 1.1)
+			self._audioService:Play2D(AssetConfig.Sounds.TaskReward, 0.35, 1.1)
 		end
 	end)
 
