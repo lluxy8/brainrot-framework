@@ -172,7 +172,7 @@ print(Framework.GetVersion()) -- 0.2.0
 
 ## Full Documentation
 
-Detailed docs live under [`docs/`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/docs/README.md):
+Detailed docs live under [`docs/`](./docs/README.md):
 
 - setup and integration
 - architecture and lifecycle
