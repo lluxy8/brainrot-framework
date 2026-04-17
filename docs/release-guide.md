@@ -47,7 +47,7 @@ In consuming game:
 
 ```toml
 [dependencies]
-brainrot-framework = "muratcan/brainrot-framework@0.3.0"
+brainrot-framework = "lluxy8/brainrot-framework@0.3.0"
 ```
 
 Then:
@@ -55,4 +55,3 @@ Then:
 ```bash
 wally install
 ```
-

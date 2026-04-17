@@ -47,7 +47,7 @@ Add dependency in the consuming game's `wally.toml`:
 
 ```toml
 [dependencies]
-brainrot-framework = "muratcan/brainrot-framework@0.2.0"
+brainrot-framework = "lluxy8/brainrot-framework@0.2.0"
 ```
 
 Run:
@@ -94,4 +94,3 @@ print(Framework.GetVersion()) -- 0.2.0
 3. Verify:
    - `TaskCompleted` and `EconomyUpdated` events arrive in `FeedbackService`.
    - player attributes update (`Brainrot_Coins`, task/progress attributes).
-
