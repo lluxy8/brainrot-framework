@@ -35,7 +35,7 @@ The repository already includes `aftman.toml`, `default.project.json`, lint/form
 
 ## Runtime Mount Points
 
-From [`default.project.json`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/default.project.json):
+From [`default.project.json`](../default.project.json):
 
 - `ReplicatedStorage.BrainrotFramework` -> `src/Shared`
 - `ServerScriptService.BrainrotFrameworkServer` -> `src/Server`

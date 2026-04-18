@@ -4,7 +4,7 @@
 
 Primary server API entry:
 
-- [`FrameworkServer.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/FrameworkServer.luau)
+- [`FrameworkServer.luau`](../src/Server/FrameworkServer.luau)
   - `Start() -> { services, components }`
   - `GetRuntime()`
   - `GetServiceRegistry()`
@@ -14,7 +14,7 @@ Primary server API entry:
 
 ### DataService
 
-File: [`DataService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/DataService.luau)
+File: [`DataService.luau`](../src/Server/Services/DataService.luau)
 
 Purpose:
 - in-memory profile lifecycle and state primitives
@@ -30,7 +30,7 @@ Key methods:
 
 ### EconomyService
 
-File: [`EconomyService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/EconomyService.luau)
+File: [`EconomyService.luau`](../src/Server/Services/EconomyService.luau)
 
 Purpose:
 - currency mutation rules and spending checks
@@ -42,7 +42,7 @@ Key methods:
 
 ### InventoryService
 
-File: [`InventoryService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/InventoryService.luau)
+File: [`InventoryService.luau`](../src/Server/Services/InventoryService.luau)
 
 Signal:
 - `ItemChanged`
@@ -56,7 +56,7 @@ Key methods:
 
 ### ZoneService
 
-File: [`ZoneService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/ZoneService.luau)
+File: [`ZoneService.luau`](../src/Server/Services/ZoneService.luau)
 
 Signal:
 - `ZoneUnlocked`
@@ -68,7 +68,7 @@ Key methods:
 
 ### StationService
 
-File: [`StationService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/StationService.luau)
+File: [`StationService.luau`](../src/Server/Services/StationService.luau)
 
 Signal:
 - `StationChanged`
@@ -81,7 +81,7 @@ Key methods:
 
 ### UpgradeService
 
-File: [`UpgradeService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/UpgradeService.luau)
+File: [`UpgradeService.luau`](../src/Server/Services/UpgradeService.luau)
 
 Signal:
 - `UpgradePurchased`
@@ -95,7 +95,7 @@ Key methods:
 
 ### RewardService
 
-File: [`RewardService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/RewardService.luau)
+File: [`RewardService.luau`](../src/Server/Services/RewardService.luau)
 
 Purpose:
 - computes and applies rewards from task completion
@@ -106,7 +106,7 @@ Key methods:
 
 ### TaskService
 
-File: [`TaskService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/TaskService.luau)
+File: [`TaskService.luau`](../src/Server/Services/TaskService.luau)
 
 Signal:
 - `TaskCompleted`
@@ -117,7 +117,7 @@ Key methods:
 
 ### QuestService
 
-File: [`QuestService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/QuestService.luau)
+File: [`QuestService.luau`](../src/Server/Services/QuestService.luau)
 
 Signals:
 - `QuestProgressed`
@@ -130,7 +130,7 @@ Key methods:
 
 ### SessionService
 
-File: [`SessionService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/SessionService.luau)
+File: [`SessionService.luau`](../src/Server/Services/SessionService.luau)
 
 Purpose:
 - higher-level task completion endpoint for gameplay integrations
@@ -140,7 +140,7 @@ Key method:
 
 ### InteractionService
 
-File: [`InteractionService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/InteractionService.luau)
+File: [`InteractionService.luau`](../src/Server/Services/InteractionService.luau)
 
 Signal:
 - `InteractionPerformed`
@@ -150,7 +150,7 @@ Key method:
 
 ### CustomerService
 
-File: [`CustomerService.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Services/CustomerService.luau)
+File: [`CustomerService.luau`](../src/Server/Services/CustomerService.luau)
 
 Signals:
 - `CustomerSpawned`
@@ -168,21 +168,21 @@ Key methods:
 
 ### PlayerController
 
-File: [`PlayerController.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Controllers/PlayerController.luau)
+File: [`PlayerController.luau`](../src/Server/Controllers/PlayerController.luau)
 
 Responsibilities:
 - sync profile/economy/zone counts into player attributes
 
 ### NPCController
 
-File: [`NPCController.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Controllers/NPCController.luau)
+File: [`NPCController.luau`](../src/Server/Controllers/NPCController.luau)
 
 Responsibilities:
 - track active customer count from service signals
 
 ### RoundController
 
-File: [`RoundController.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Controllers/RoundController.luau)
+File: [`RoundController.luau`](../src/Server/Controllers/RoundController.luau)
 
 Responsibilities:
 - timed customer spawning loop (default wave behavior)
@@ -190,15 +190,15 @@ Responsibilities:
 ## Server Components
 
 Station components:
-- [`WorkstationComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/Stations/WorkstationComponent.luau)
-- [`DeliveryStationComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/Stations/DeliveryStationComponent.luau)
-- [`QueueStationComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/Stations/QueueStationComponent.luau)
+- [`WorkstationComponent.luau`](../src/Server/Components/Stations/WorkstationComponent.luau)
+- [`DeliveryStationComponent.luau`](../src/Server/Components/Stations/DeliveryStationComponent.luau)
+- [`QueueStationComponent.luau`](../src/Server/Components/Stations/QueueStationComponent.luau)
 
 Zone components:
-- [`RewardZoneComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/Zones/RewardZoneComponent.luau)
-- [`UnlockZoneComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/Zones/UnlockZoneComponent.luau)
-- [`WorkZoneComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/Zones/WorkZoneComponent.luau)
+- [`RewardZoneComponent.luau`](../src/Server/Components/Zones/RewardZoneComponent.luau)
+- [`UnlockZoneComponent.luau`](../src/Server/Components/Zones/UnlockZoneComponent.luau)
+- [`WorkZoneComponent.luau`](../src/Server/Components/Zones/WorkZoneComponent.luau)
 
 NPC component:
-- [`CustomerComponent.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Components/NPC/CustomerComponent.luau)
+- [`CustomerComponent.luau`](../src/Server/Components/NPC/CustomerComponent.luau)
 
