@@ -6,7 +6,7 @@ Config files in `src/Shared/Config` define default gameplay shape and are intend
 
 ## Task Config
 
-File: [`TaskConfig.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Config/TaskConfig.luau)
+File: [`TaskConfig.luau`](../src/Shared/Config/TaskConfig.luau)
 
 Current tasks:
 
@@ -23,7 +23,7 @@ Definition fields:
 
 ## Upgrade Config
 
-File: [`UpgradeConfig.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Config/UpgradeConfig.luau)
+File: [`UpgradeConfig.luau`](../src/Shared/Config/UpgradeConfig.luau)
 
 Current upgrades:
 
@@ -42,7 +42,7 @@ Definition fields:
 
 ## Zone Config
 
-File: [`ZoneConfig.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Config/ZoneConfig.luau)
+File: [`ZoneConfig.luau`](../src/Shared/Config/ZoneConfig.luau)
 
 Current zones:
 
@@ -60,7 +60,7 @@ Definition fields:
 
 ## Economy Config
 
-File: [`EconomyConfig.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Config/EconomyConfig.luau)
+File: [`EconomyConfig.luau`](../src/Shared/Config/EconomyConfig.luau)
 
 Fields:
 
@@ -70,7 +70,7 @@ Fields:
 
 ## Asset Config
 
-File: [`AssetConfig.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Config/AssetConfig.luau)
+File: [`AssetConfig.luau`](../src/Shared/Config/AssetConfig.luau)
 
 Fields:
 
@@ -78,9 +78,9 @@ Fields:
 
 ## Related Shared Definitions
 
-- Tasks: [`TaskDefinition.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Gameplay/Task/TaskDefinition.luau)
-- Upgrades: [`UpgradeDefinition.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Gameplay/Upgrade/UpgradeDefinition.luau)
-- Zones: [`ZoneDefinition.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Gameplay/Zone/ZoneDefinition.luau)
-- Interactions: [`InteractionDefinition.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Gameplay/Interaction/InteractionDefinition.luau)
-- Stations: [`StationDefinition.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Gameplay/Station/StationDefinition.luau)
-- Quests: [`QuestDefinition.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Gameplay/Quest/QuestDefinition.luau)
+- Tasks: [`TaskDefinition.luau`](../src/Shared/Gameplay/Task/TaskDefinition.luau)
+- Upgrades: [`UpgradeDefinition.luau`](../src/Shared/Gameplay/Upgrade/UpgradeDefinition.luau)
+- Zones: [`ZoneDefinition.luau`](../src/Shared/Gameplay/Zone/ZoneDefinition.luau)
+- Interactions: [`InteractionDefinition.luau`](../src/Shared/Gameplay/Interaction/InteractionDefinition.luau)
+- Stations: [`StationDefinition.luau`](../src/Shared/Gameplay/Station/StationDefinition.luau)
+- Quests: [`QuestDefinition.luau`](../src/Shared/Gameplay/Quest/QuestDefinition.luau)

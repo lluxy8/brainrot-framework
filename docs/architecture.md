@@ -8,9 +8,9 @@
 
 ## Bootstrap Entry Points
 
-- Server: [`Init.server.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Init.server.luau)
+- Server: [`Init.server.luau`](../src/Server/Init.server.luau)
   - calls `FrameworkServer.Start()`
-- Client: [`Init.client.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Client/Init.client.luau)
+- Client: [`Init.client.luau`](../src/Client/Init.client.luau)
   - calls `FrameworkClient.Start()`
 
 ## Registry Pattern
@@ -18,10 +18,10 @@
 The framework uses a lightweight registry (`Shared/Core/Registry`) for runtime service lookup.
 
 - Server registry ownership:
-  - [`RegisterServices.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Bootstrap/RegisterServices.luau)
-  - [`RegisterComponents.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Bootstrap/RegisterComponents.luau)
+  - [`RegisterServices.luau`](../src/Server/Bootstrap/RegisterServices.luau)
+  - [`RegisterComponents.luau`](../src/Server/Bootstrap/RegisterComponents.luau)
 - Client registry ownership:
-  - [`RegisterControllers.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Client/Bootstrap/RegisterControllers.luau)
+  - [`RegisterControllers.luau`](../src/Client/Bootstrap/RegisterControllers.luau)
 
 ## Server Startup Order
 

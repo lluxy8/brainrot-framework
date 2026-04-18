@@ -4,7 +4,7 @@
 
 Package version lives in:
 
-- [`wally.toml`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/wally.toml)
+- [`wally.toml`](../wally.toml)
 
 Current version: `0.2.0`
 

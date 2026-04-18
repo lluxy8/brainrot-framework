@@ -4,15 +4,15 @@
 
 Remote names are defined in:
 
-- [`RemoteNames.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Net/RemoteNames.luau)
+- [`RemoteNames.luau`](../src/Shared/Net/RemoteNames.luau)
 
 Helper methods for remote folder/event creation:
 
-- [`Remotes.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Constants/Remotes.luau)
+- [`Remotes.luau`](../src/Shared/Constants/Remotes.luau)
 
 Packet type definitions:
 
-- [`PacketTypes.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Shared/Net/PacketTypes.luau)
+- [`PacketTypes.luau`](../src/Shared/Net/PacketTypes.luau)
 
 ## Request/Response Endpoints
 
@@ -130,5 +130,5 @@ On failure, the corresponding `*Result` packet sets:
 
 Network behavior is defined centrally in:
 
-- [`RegisterServices.luau`](/C:/Users/Murat%20Can/Projeler/RobloxBrainrotEngine/src/Server/Bootstrap/RegisterServices.luau)
+- [`RegisterServices.luau`](../src/Server/Bootstrap/RegisterServices.luau)
 
