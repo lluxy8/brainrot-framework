@@ -58,7 +58,7 @@ registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 
 [dependencies]
-brainrot-framework = "muratcan/brainrot-framework@0.2.0"
+brainrot-framework = "lluxy8/brainrot-framework@0.2.2"
 ```
 
 After that call `aftman install`
@@ -135,7 +135,7 @@ Use semantic versions from Wally in your game project:
 
 ```toml
 [dependencies]
-brainrot-framework = "muratcan/brainrot-framework@0.2.0"
+brainrot-framework = "lluxy8/brainrot-framework@0.2.2"
 ```
 
 Server bootstrap example:
@@ -165,7 +165,7 @@ Shared API example:
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Framework = require(ReplicatedStorage.Packages["brainrot-framework"].Shared.Framework)
 
-print(Framework.GetVersion()) -- 0.2.0
+print(Framework.GetVersion()) -- 0.2.2
 ```
 
 ---
@@ -179,4 +179,3 @@ Detailed docs live under [`docs/`](./docs/README.md):
 - server/client API references
 - networking protocol
 - extension and release workflow
-

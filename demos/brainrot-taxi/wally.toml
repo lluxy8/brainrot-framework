@@ -1,0 +1,8 @@
+[package]
+name = "lluxy8/brainrot-taxi-demo"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+brainrot-framework = "lluxy8/brainrot-framework@0.2.2"

@@ -2,7 +2,7 @@
 
 local Framework = {}
 
-Framework.Version = "0.2.0"
+Framework.Version = "0.2.2"
 
 Framework.RemoteNames = require(script.Net.RemoteNames)
 Framework.PacketTypes = require(script.Net.PacketTypes)

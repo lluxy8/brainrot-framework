@@ -6,7 +6,7 @@ Package version lives in:
 
 - [`wally.toml`](../wally.toml)
 
-Current version: `0.2.0`
+Current version: `0.2.2`
 
 ## Semantic Versioning Policy
 
@@ -47,7 +47,7 @@ In consuming game:
 
 ```toml
 [dependencies]
-brainrot-framework = "muratcan/brainrot-framework@0.3.0"
+brainrot-framework = "lluxy8/brainrot-framework@0.3.0"
 ```
 
 Then:
@@ -55,4 +55,3 @@ Then:
 ```bash
 wally install
 ```
-
