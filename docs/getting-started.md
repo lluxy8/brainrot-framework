@@ -47,7 +47,7 @@ Add dependency in the consuming game's `wally.toml`:
 
 ```toml
 [dependencies]
-brainrot-framework = "lluxy8/brainrot-framework@0.2.0"
+brainrot-framework = "lluxy8/brainrot-framework@0.2.2"
 ```
 
 Run:
@@ -83,7 +83,7 @@ local registry = FrameworkClient.Start()
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Framework = require(ReplicatedStorage.Packages["brainrot-framework"].Shared.Framework)
 
-print(Framework.GetVersion()) -- 0.2.0
+print(Framework.GetVersion()) -- 0.2.2
 ```
 
 ## Quick Smoke Test

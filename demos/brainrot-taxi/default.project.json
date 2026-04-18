@@ -4,26 +4,23 @@
     "$className": "DataModel",
     "ReplicatedStorage": {
       "BrainrotFramework": {
-        "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Shared"
-      },
-      "Packages": {
-        "$path": "Packages"
+        "$path": "Packages/brainrot-framework-current/src/Shared"
       }
     },
     "ServerScriptService": {
       "BrainrotFrameworkServer": {
         "$className": "Folder",
         "Bootstrap": {
-          "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Server/Bootstrap"
+          "$path": "Packages/brainrot-framework-current/src/Server/Bootstrap"
         },
         "Components": {
-          "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Server/Components"
+          "$path": "Packages/brainrot-framework-current/src/Server/Components"
         },
         "Controllers": {
-          "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Server/Controllers"
+          "$path": "Packages/brainrot-framework-current/src/Server/Controllers"
         },
         "Services": {
-          "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Server/Services"
+          "$path": "Packages/brainrot-framework-current/src/Server/Services"
         }
       },
       "$path": "src/ServerScriptService"
@@ -33,16 +30,16 @@
         "BrainrotFrameworkClient": {
           "$className": "Folder",
           "Bootstrap": {
-            "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Client/Bootstrap"
+            "$path": "../../src/Client/Bootstrap"
           },
           "Components": {
-            "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Client/Components"
+            "$path": "../../src/Client/Components"
           },
           "Controllers": {
-            "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Client/Controllers"
+            "$path": "../../src/Client/Controllers"
           },
           "Services": {
-            "$path": "Packages/_Index/lluxy8_brainrot-framework@0.2.0/brainrot-framework/src/Client/Services"
+            "$path": "../../src/Client/Services"
           }
         },
         "$path": "src/StarterPlayer/StarterPlayerScripts"

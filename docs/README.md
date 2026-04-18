@@ -1,6 +1,6 @@
 # Brainrot Framework Documentation
 
-Version: `0.2.0`
+Version: `0.2.2`
 
 This directory contains maintainable documentation for both framework contributors and game teams consuming the package from another repository.
 
@@ -35,4 +35,3 @@ This directory contains maintainable documentation for both framework contributo
 4. [Server Reference](./server-reference.md)
 5. [Client Reference](./client-reference.md)
 6. [Extension Guide](./extension-guide.md)
-

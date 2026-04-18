@@ -75,6 +75,7 @@ File: [`AssetConfig.luau`](../src/Shared/Config/AssetConfig.luau)
 Fields:
 
 - `Sounds.TaskReward`
+- `Decals.GuideArrow`
 
 ## Related Shared Definitions
 

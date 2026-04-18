@@ -82,6 +82,8 @@ Signals exposed:
   - reward/balance attributes + reward sound
 - [`HighlightComponent.luau`](../src/Client/Components/HighlightComponent.luau)
   - helper for target highlight display
+- [`GuidePathComponent.luau`](../src/Client/Components/GuidePathComponent.luau)
+  - world-space arrow trail from player to a target instance or position
 
 ## Typical Client Usage
 

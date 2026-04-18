@@ -6,7 +6,7 @@ Package version lives in:
 
 - [`wally.toml`](../wally.toml)
 
-Current version: `0.2.0`
+Current version: `0.2.2`
 
 ## Semantic Versioning Policy
 

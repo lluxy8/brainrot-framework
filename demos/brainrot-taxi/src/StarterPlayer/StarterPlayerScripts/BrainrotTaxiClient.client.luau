@@ -5,6 +5,8 @@ local Workspace = game:GetService("Workspace")
 
 local player = Players.LocalPlayer
 local DEMO_ROOT_NAME = "BrainrotTaxiDemo"
+local WASH_TASK_ID = "WashCar"
+local SERVE_TASK_ID = "ServeCustomer"
 
 local function createDemoHud()
 	local playerGui = player:WaitForChild("PlayerGui")
@@ -72,10 +74,15 @@ local function bootstrap()
 	local registerControllers = require(frameworkClientRoot.Bootstrap.RegisterControllers)
 	local registry = registerControllers()
 	local promptComponent = registry:Resolve("InteractionPromptComponent")
+	local feedbackService = registry:Resolve("FeedbackService")
+	local guidePathComponent = registry:Resolve("GuidePathComponent")
 
 	local root = Workspace:WaitForChild(DEMO_ROOT_NAME) :: Model
+	local washStation = root:WaitForChild("WashTaxiStation")
+	local dropoffStation = root:WaitForChild("DropoffStation")
 	bindPrompt(promptComponent, root, "WashTaxiStation", "WashCarInteract")
 	bindPrompt(promptComponent, root, "DropoffStation", "ServeCustomerInteract")
+	guidePathComponent:SetTarget(washStation)
 
 	local screenGui = createDemoHud()
 	updateHud(screenGui)
@@ -87,6 +94,18 @@ local function bootstrap()
 	end)
 	player:GetAttributeChangedSignal("Brainrot_LastRewardAmount"):Connect(function()
 		updateHud(screenGui)
+	end)
+
+	feedbackService.TaskCompletedReceived:Connect(function(payload: any)
+		if type(payload) ~= "table" or type(payload.taskId) ~= "string" then
+			return
+		end
+
+		if payload.taskId == WASH_TASK_ID then
+			guidePathComponent:SetTarget(dropoffStation)
+		elseif payload.taskId == SERVE_TASK_ID then
+			guidePathComponent:SetTarget(washStation)
+		end
 	end)
 end
 

@@ -1,6 +1,6 @@
 [package]
 name = "lluxy8/brainrot-framework"
-version = "0.2.0"
+version = "0.2.2"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 exclude = ["demos", "demos/**"]
